@@ -17,20 +17,20 @@ const slides = [
     bgImage: "/assets/images/hero.jpg",
   },
   {
-    title: "Adventure Lives at\nthe Center of New York",
+    title: "UM Wildland and Recreation \nManagement conducting use survey",
     description:
       "Where the mountain is alive — and everything runs on pure electric fun.",
     cta: "Explore the Mountain",
     ctaLink: "/explore",
-    bgImage: "/assets/images/hero.jpg",
+    bgImage: "/assets/images/hero-slider-2.jpg",
   },
   {
-    title: "Adventure Lives at\nthe Center of New York",
+    title: "Public Comment Open for Analysis of \nBrownfields Cleanup Alternatives",
     description:
       "Where the mountain is alive — and everything runs on pure electric fun.",
     cta: "Explore the Mountain",
     ctaLink: "/explore",
-    bgImage: "/assets/images/hero.jpg",
+    bgImage: "/assets/images/hero-slider-3.jpg",
   },
 ];
 

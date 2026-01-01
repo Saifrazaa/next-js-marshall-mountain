@@ -1,9 +1,25 @@
+"use client";
 import Image from "next/image";
 import FadeInSection from "./FadeInSection";
 import Button from "../ui/Button";
-import Link from "next/link";
+import { useState } from "react";
+
+const activityImages = [
+  "/assets/images/activities/bike-trailing.jpg",
+  "/assets/images/activities/moto-zone.jpeg",
+  "/assets/images/activities/activities.jpg",
+  "/assets/images/activities/mud-running.jpg",
+  "/assets/images/activities/hoh-gym.webp",
+  "/assets/images/activities/trails.jpg",
+];
 
 export default function ActivitiesSection() {
+  const [activityImage, setActivityImage] = useState<number>(0);
+
+  const handleActivityClick = (index: number) => {
+    setActivityImage(index);
+  };
+
   return (
     <FadeInSection>
       <section className="bg-white w-full flex flex-col gap-8 md:gap-10 lg:gap-10 xl:gap-12.5 items-center overflow-hidden pb-12 md:pb-16 lg:pb-20 xl:pb-25 pt-8 md:pt-10 lg:pt-12.5 px-5 md:px-8 lg:px-16 xl:px-25">
@@ -24,8 +40,8 @@ export default function ActivitiesSection() {
           <div className="w-full lg:w-[280px] xl:w-[320px] h-64 md:h-80 lg:h-auto lg:self-stretch relative">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <Image
-                src="/assets/images/activities.jpg"
-                alt="Mountain activities"
+                src={activityImages[activityImage]}
+                alt={"Activity Image"}
                 fill
                 className="object-cover"
               />
@@ -39,12 +55,14 @@ export default function ActivitiesSection() {
               <ActivityBox
                 title="E-Bike Trails (4 miles built — 10 coming)"
                 desc="Ride through forest, valleys, and drumlins."
-                link="/experience"
+                currnetlyActive={activityImage === 0}
+                onClick={() => handleActivityClick(0)}
               />
               <ActivityBox
                 title="E-Moto Zone (coming)"
                 desc="Electric motocross hidden behind the farmhouse."
-                link="/experience"
+                currnetlyActive={activityImage === 1}
+                onClick={() => handleActivityClick(1)}
               />
             </div>
 
@@ -54,13 +72,15 @@ export default function ActivitiesSection() {
                 title="UTV Mountain Tours"
                 desc="Bring your own or ride with us — we'll get you to the best
                   views (and to town for snacks)."
-                link="/experience"
+                currnetlyActive={activityImage === 2}
+                onClick={() => handleActivityClick(2)}
               />
               <ActivityBox
                 title="Mud Run & Obstacle Course"
                 desc="Home of the legendary Barden Mudfest. Perfect for bachelor
                   squads, bridal parties, and team building."
-                link="/experience"
+                currnetlyActive={activityImage === 3}
+                onClick={() => handleActivityClick(3)}
               />
             </div>
 
@@ -70,20 +90,26 @@ export default function ActivitiesSection() {
                 title="HOH Gym (Kid Zone + Adult Playground)"
                 desc="A movement arena for kids, athletes, CEOs, and everyone in
                   between."
-                link="/experience"
+                currnetlyActive={activityImage === 4}
+                onClick={() => handleActivityClick(4)}
               />
               <ActivityBox
                 title="Trails That Connect Two Worlds"
                 desc="MMR's trail system links directly to Blueberry Brook Farm
                   Resort via the Marshall Towpath."
-                link="/experience"
+                currnetlyActive={activityImage === 5}
+                onClick={() => handleActivityClick(5)}
               />
             </div>
           </div>
         </div>
 
         {/* CTA Button */}
-        <Button href="/experiences" variant="primary" className="px-4 py-2 md:px-5 md:py-2.5 lg:px-3 lg:py-[7px] text-sm md:text-base">
+        <Button
+          href="/experiences"
+          variant="primary"
+          className="px-4 py-2 md:px-5 md:py-2.5 lg:px-3 lg:py-[7px] text-sm md:text-base"
+        >
           Explore Experiences
         </Button>
 
@@ -105,21 +131,36 @@ export default function ActivitiesSection() {
 const ActivityBox = ({
   title,
   desc,
-  link,
+  currnetlyActive,
+  onClick,
 }: {
   title: string;
   desc: string;
-  link: string;
+  currnetlyActive: boolean;
+  onClick: () => void;
 }) => (
-  <Link
-    href={link}
-    className="bg-[#f9f9f9] hover:bg-[#5e8591] w-full md:flex-1 min-h-[150px] md:h-42.5 flex flex-col gap-2.5 items-start p-5 md:p-7 lg:p-8.75 whitespace-normal group transition-all"
+  <Button
+    onClick={onClick}
+    className={
+      "hover:bg-[#5e8591] cursor-pointer w-full md:flex-1 min-h-37.5 md:h-42.5 flex flex-col gap-2.5 items-start p-5 md:p-7 lg:p-8.75 whitespace-normal group transition-all " +
+      (currnetlyActive ? "bg-[#5e8591] text-white" : "bg-[#f9f9f9]")
+    }
   >
-    <h3 className="font-oswald font-bold text-lg md:text-[20px] leading-tight md:leading-7.25 text-[#333] group-hover:text-white w-full">
+    <h3
+      className={
+        "font-oswald font-bold text-lg md:text-[20px] leading-tight md:leading-7.25 text-[#333] group-hover:text-white w-full " +
+        (currnetlyActive && "text-white")
+      }
+    >
       {title}
     </h3>
-    <p className="font-archivo font-normal text-sm md:text-base lg:text-[17px] leading-relaxed md:leading-6 lg:leading-6.5 text-[#6e6e6e] group-hover:text-white/75 w-full">
+    <p
+      className={
+        "font-archivo font-normal text-sm md:text-base lg:text-[17px] leading-relaxed md:leading-6 lg:leading-6.5 text-[#6e6e6e] group-hover:text-white/75 w-full " +
+        (currnetlyActive && "text-white/75")
+      }
+    >
       {desc}
     </p>
-  </Link>
+  </Button>
 );
