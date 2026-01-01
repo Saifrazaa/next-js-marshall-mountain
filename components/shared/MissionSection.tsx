@@ -4,14 +4,14 @@ import FadeInSection from "./FadeInSection";
 export default function MissionSection() {
   return (
     <FadeInSection>
-      <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-25 pt-12.5 px-25">
+      <section className="bg-white w-full flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-10 xl:gap-[60px] items-start overflow-hidden pb-12 md:pb-16 lg:pb-20 xl:pb-25 pt-8 md:pt-10 lg:pt-12.5 px-5 md:px-8 lg:px-16 xl:px-25">
       {/* Left Side - Content */}
-      <div className="flex-1 flex flex-col items-start justify-center min-h-0 min-w-0 overflow-hidden pb-[15px] pt-0.5">
-        <div className="flex flex-col gap-5 items-start">
-          <h2 className="font-oswald font-bold text-[45px] leading-14.75 text-[#333] capitalize">
+      <div className="w-full lg:flex-1 flex flex-col items-start justify-center min-h-0 min-w-0 overflow-hidden">
+        <div className="flex flex-col gap-4 md:gap-5 items-start">
+          <h2 className="font-oswald font-bold text-2xl md:text-3xl lg:text-[45px] leading-tight md:leading-snug lg:leading-14.75 text-[#333] capitalize">
             A Mountain with a Mission.
           </h2>
-          <div className="font-archivo font-normal text-[17px] leading-6.5 text-[#6e6e6e] w-[589px] whitespace-pre-wrap">
+          <div className="font-archivo font-normal text-sm md:text-base lg:text-[17px] leading-relaxed md:leading-6 lg:leading-6.5 text-[#6e6e6e] w-full xl:w-[589px] whitespace-normal xl:whitespace-pre-wrap">
             <p className="mb-3">
               Marshall Mountain Resort is becoming something bold  a destination where nature, movement, and connection collide.
             </p>
@@ -24,7 +24,7 @@ export default function MissionSection() {
       </div>
 
       {/* Right Side - Image */}
-      <div className="w-[614px] self-stretch flex flex-col items-start justify-center">
+      <div className="w-full lg:flex-1 xl:w-[614px] h-64 md:h-96 lg:h-auto lg:self-stretch flex flex-col items-start justify-center">
         <div className="flex-1 min-h-0 min-w-0 w-full relative">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute bg-[#d9d9d9] inset-0" />

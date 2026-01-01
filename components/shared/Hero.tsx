@@ -75,7 +75,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative w-full flex flex-col gap-25 items-start pb-25 pt-[200px] overflow-hidden">
+      <section className="relative w-full h-screen lg:h-auto flex flex-col items-center lg:items-start justify-center overflow-hidden px-5 md:px-8 lg:px-0 lg:gap-25 lg:pb-25 lg:pt-[200px]">
         {/* Hero Slider with Background Images */}
         <div className="absolute inset-0 z-0">
           <div className="overflow-hidden h-full" ref={emblaRef2}>
@@ -103,9 +103,9 @@ export default function Hero() {
         </div>
 
         {/* Content Slider */}
-        <div className="relative w-full flex items-center overflow-hidden z-10">
-          <div className="flex-1 flex flex-row items-center self-stretch">
-            <div className="flex-1 flex flex-col h-full items-start justify-center min-h-0 min-w-0">
+        <div className="relative w-full h-full flex items-center justify-center overflow-hidden z-10">
+          <div className="flex-1 flex flex-row items-center justify-center self-stretch">
+            <div className="flex-1 flex flex-col h-full items-center justify-center min-h-0 min-w-0">
               <div className="w-full relative">
                 <div className="overflow-hidden h-full" ref={emblaRef}>
                   <div className="flex h-full">
@@ -114,21 +114,21 @@ export default function Hero() {
                         key={index}
                         className="flex-[0_0_100%] min-w-0 flex flex-col items-center justify-center"
                       >
-                        <div className="whitespace-pre-wrap">
-                          <h1 className="font-oswald font-bold text-[60px] leading-[78px] text-white text-center capitalize mb-0">
+                        <div className="whitespace-pre-wrap w-full">
+                          <h1 className="font-oswald font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] leading-tight md:leading-[1.3] lg:leading-[78px] text-white text-center capitalize mb-0">
                             {slide.title.split("\n")[0]}
                           </h1>
-                          <h1 className="font-oswald font-bold text-[60px] leading-[78px] text-white text-center capitalize">
+                          <h1 className="font-oswald font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] leading-tight md:leading-[1.3] lg:leading-[78px] text-white text-center capitalize">
                             {slide.title.split("\n")[1]}
                           </h1>
                         </div>
-                        <p className="font-archivo font-normal text-[17px] leading-6.5 my-6 text-white/75 text-center whitespace-pre-wrap">
+                        <p className="font-archivo font-normal text-sm sm:text-base md:text-[17px] leading-relaxed md:leading-6.5 my-4 md:my-6 text-white/75 text-center whitespace-pre-wrap max-w-xl md:max-w-2xl lg:max-w-3xl">
                           {slide.description}
                         </p>
                         <Button
                           href={slide.ctaLink}
                           variant="primary"
-                          className="px-3 py-[7px]"
+                          className="px-4 py-2 md:px-5 md:py-2.5 lg:px-3 lg:py-[7px] text-sm md:text-base"
                         >
                           {slide.cta}
                         </Button>
