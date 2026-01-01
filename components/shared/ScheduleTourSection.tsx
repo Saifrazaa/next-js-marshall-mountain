@@ -1,9 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import Button from "../ui/Button";
 
 export default function ScheduleTourSection() {
   return (
-    <section className="relative h-[223px] w-full">
+    <FadeInSection>
+      <section className="relative h-[223px] w-full">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bg-[#434343] inset-0" />
         <div className="absolute inset-0 opacity-20 overflow-hidden">
@@ -19,23 +21,20 @@ export default function ScheduleTourSection() {
         Schedule a Tour
       </h2>
       <div className="absolute left-[491px] top-[123px] flex gap-0">
-        <Link 
+        <Button 
           href="/wedding" 
-          className="bg-[#ebebeb] px-[38px] py-[15px] flex items-center justify-center overflow-hidden"
+          className="bg-[#ebebeb] px-[38px] py-[15px] text-[#a4a4a4] font-oswald font-semibold text-sm uppercase tracking-[0.84px] leading-6"
         >
-          <span className="font-oswald font-semibold text-sm text-[#a4a4a4] uppercase tracking-[0.84px] leading-6">
-            Plan a Wedding or Event
-          </span>
-        </Link>
-        <Link 
+          Plan a Wedding or Event
+        </Button>
+        <Button 
           href="/lodging" 
-          className="bg-[#5e8591] px-[38px] py-[15px] flex items-center justify-center overflow-hidden"
+          variant="primary"
         >
-          <span className="font-oswald font-semibold text-sm text-white uppercase tracking-[0.84px] leading-6">
-            Book Lodging
-          </span>
-        </Link>
+          Book Lodging
+        </Button>
       </div>
     </section>
+    </FadeInSection>
   );
 }

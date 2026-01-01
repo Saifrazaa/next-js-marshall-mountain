@@ -1,9 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import Button from "../ui/Button";
 
 export default function CorporateSection() {
   return (
-    <section className="bg-white w-full flex gap-[60px] h-[535px] items-start overflow-hidden pb-[100px] pt-[31px] px-[100px]">
+    <FadeInSection>
+      <section className="bg-white w-full flex gap-[60px] h-[535px] items-start overflow-hidden pb-[100px] pt-[31px] px-[100px]">
       {/* Left Side - Image */}
       <div className="w-[557px] h-full flex flex-col items-start justify-center">
         <div className="flex-1 min-h-0 min-w-0 w-full relative">
@@ -33,14 +35,13 @@ export default function CorporateSection() {
             <p>• family corporate visits</p>
           </div>
         </div>
-        <Link 
+        <Button 
           href="/corporate" 
-          className="bg-[#5e8591] flex flex-col items-center justify-center overflow-hidden px-3 py-[7px]"
+          variant="primary"
+          className="px-3 py-[7px]"
         >
-          <span className="font-oswald font-semibold text-sm text-center text-white tracking-[0.84px] uppercase leading-6">
-            Plan a Corporate Retreat
-          </span>
-        </Link>
+          Plan a Corporate Retreat
+        </Button>
       </div>
 
       {/* Right Side - Activities List */}
@@ -55,5 +56,6 @@ export default function CorporateSection() {
         <p>• Firepit strategy nights</p>
       </div>
     </section>
+    </FadeInSection>
   );
 }

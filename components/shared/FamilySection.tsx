@@ -1,11 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import Button from "../ui/Button";
 
 export default function FamilySection() {
   return (
     <>
       {/* First Family Section - Memory Section */}
-      <section className="relative bg-[#5e8591] w-full flex gap-[60px] items-center justify-center overflow-hidden px-[170px] py-[60px]">
+      <FadeInSection>
+        <section className="relative bg-[#5e8591] w-full flex gap-[60px] items-center justify-center overflow-hidden px-[170px] py-[60px]">
         <div className="flex-1 flex flex-col gap-6 items-start">
           <h2 className="font-bold text-[40px] leading-[48px] text-white min-w-full whitespace-pre-wrap">
             A Mountain Full of Shared Memories
@@ -13,11 +15,9 @@ export default function FamilySection() {
           <p className="font-normal text-base leading-6 text-white min-w-full whitespace-pre-wrap">
             Birthdays. Kids camps. Teen adventures. Weddings with kid zones. Family weekends powered by motion and imagination.
           </p>
-          <Link href="/family" className="bg-black flex flex-col items-center justify-center p-3 rounded-lg w-[240px]">
-            <span className="font-medium text-base leading-6 text-white">
-              Explore Family Experiences
-            </span>
-          </Link>
+          <Button href="/family" variant="secondary" className="rounded-lg w-[240px]">
+            Explore Family Experiences
+          </Button>
         </div>
         <div className="flex-1 h-[400px] flex items-start overflow-hidden">
           <div className="flex-1 h-full relative">
@@ -40,9 +40,11 @@ export default function FamilySection() {
           </div>
         </div>
       </section>
+      </FadeInSection>
 
       {/* Second Family Section - Generational Play */}
-      <section className="relative w-full flex gap-[60px] h-[575px] items-center justify-center overflow-hidden px-[170px]">
+      <FadeInSection>
+        <section className="relative w-full flex gap-[60px] h-[575px] items-center justify-center overflow-hidden px-[170px]">
         <div className="flex-1 flex flex-col gap-6 items-start whitespace-pre-wrap">
           <h2 className="font-bold text-[40px] leading-[48px] text-[#333] w-full">
             Designed for Generational Play — From Kids to Grandparents
@@ -133,6 +135,7 @@ export default function FamilySection() {
           />
         </div>
       </section>
+      </FadeInSection>
     </>
   );
 }

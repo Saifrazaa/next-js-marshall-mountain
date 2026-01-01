@@ -1,17 +1,21 @@
 import Image from "next/image";
+import FadeInSection from "./FadeInSection";
 
 export default function LocationSection() {
   return (
     <>
       {/* Location Title */}
-      <div className="w-full h-[59px] flex flex-col gap-5 items-start overflow-hidden">
+      <FadeInSection>
+        <div className="w-full h-[59px] flex flex-col gap-5 items-start overflow-hidden">
         <h2 className="font-oswald font-bold text-[45px] leading-[59px] text-black text-center capitalize w-full whitespace-pre-wrap">
           LOCATION MAP
         </h2>
       </div>
+      </FadeInSection>
 
       {/* Map Section */}
-      <section className="relative w-full flex gap-[60px] items-center justify-center overflow-hidden px-[170px] py-[60px]">
+      <FadeInSection>
+        <section className="relative w-full flex gap-[60px] items-center justify-center overflow-hidden px-[170px] py-[60px]">
         <div className="flex-1 h-[300px] flex items-start overflow-hidden px-0 py-1">
           <div className="bg-black/5 flex-1 h-full rounded-md relative">
             <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[1100px] h-[1100px]">
@@ -46,6 +50,7 @@ export default function LocationSection() {
           </div>
         </div>
       </section>
+      </FadeInSection>
     </>
   );
 }

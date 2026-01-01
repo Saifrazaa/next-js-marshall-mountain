@@ -1,9 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import Button from "../ui/Button";
 
 export default function FarmhouseSection() {
   return (
-    <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
+    <FadeInSection>
+      <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
       {/* Left Side - Content */}
       <div className="flex-1 flex flex-col gap-[35px] items-start justify-center min-h-0 min-w-0 overflow-hidden pb-[15px] pt-[2px]">
         <div className="flex flex-col gap-5 items-start">
@@ -25,14 +27,13 @@ export default function FarmhouseSection() {
             <p>• bachelor/bachelorette groups.</p>
           </div>
         </div>
-        <Link 
+        <Button 
           href="/farmhouse" 
-          className="bg-[#5e8591] flex flex-col items-center justify-center overflow-hidden px-3 py-[7px]"
+          variant="primary"
+          className="px-3 py-[7px]"
         >
-          <span className="font-oswald font-semibold text-sm text-center text-white tracking-[0.84px] uppercase leading-6">
-            Explore the Farmhouse
-          </span>
-        </Link>
+          Explore the Farmhouse
+        </Button>
       </div>
 
       {/* Right Side - Images */}
@@ -57,5 +58,6 @@ export default function FarmhouseSection() {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 }

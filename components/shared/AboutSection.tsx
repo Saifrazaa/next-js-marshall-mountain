@@ -1,8 +1,10 @@
 import Image from "next/image";
+import FadeInSection from "./FadeInSection";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
+    <FadeInSection>
+      <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
       {/* Left Side - Images */}
       <div className="flex-1 flex flex-col items-start justify-center min-h-0 min-w-0 pl-[120px] relative self-stretch">
         <div className="flex-1 min-h-0 min-w-0 w-full relative">
@@ -45,5 +47,6 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 }

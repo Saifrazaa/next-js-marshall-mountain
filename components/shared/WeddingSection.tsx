@@ -1,9 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import Button from "../ui/Button";
 
 export default function WeddingSection() {
   return (
-    <section className="bg-[#f9f9f9] w-full flex flex-col gap-[45px] items-center overflow-hidden p-[100px]">
+    <FadeInSection>
+      <section className="bg-[#f9f9f9] w-full flex flex-col gap-[45px] items-center overflow-hidden p-[100px]">
       {/* Top - Title */}
       <div className="w-full flex items-center justify-between">
         <div className="w-[1240px] flex flex-col items-center overflow-hidden">
@@ -78,14 +80,14 @@ export default function WeddingSection() {
       </div>
 
       {/* CTA Button */}
-      <Link 
+      <Button 
         href="/schedule-tour" 
-        className="bg-[#5e8591] flex flex-col items-center justify-center overflow-hidden px-3 py-[7px]"
+        variant="primary"
+        className="px-3 py-[7px]"
       >
-        <span className="font-oswald font-semibold text-sm text-center text-white tracking-[0.84px] uppercase leading-6">
-          Schedule a Tour
-        </span>
-      </Link>
+        Schedule a Tour
+      </Button>
     </section>
+    </FadeInSection>
   );
 }

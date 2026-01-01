@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "../ui/Button";
 
 export default function Footer() {
   return (
@@ -32,36 +32,26 @@ export default function Footer() {
             Quick Links
           </h3>
           <div className="w-full flex flex-col gap-[15px] items-start">
-            <Link href="/mountain-experience" className="w-full flex gap-[15px] items-center px-0 py-px">
+            <Button href="/mountain-experience" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Mountain Experience
-              </span>
-            </Link>
-            <Link href="/ceremony-locations" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Mountain Experience</span>
+            </Button>
+            <Button href="/ceremony-locations" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Ceremony Locations
-              </span>
-            </Link>
-            <Link href="/reception" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Ceremony Locations</span>
+            </Button>
+            <Button href="/reception" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Our Reception
-              </span>
-            </Link>
-            <Link href="/pricing" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Our Reception</span>
+            </Button>
+            <Button href="/pricing" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Our Pricing
-              </span>
-            </Link>
-            <Link href="/real-moments" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Our Pricing</span>
+            </Button>
+            <Button href="/real-moments" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Real Moments
-              </span>
-            </Link>
+              <span>Real Moments</span>
+            </Button>
           </div>
         </div>
 
@@ -71,24 +61,18 @@ export default function Footer() {
             Usefull Links
           </h3>
           <div className="w-full flex flex-col gap-[15px] items-start">
-            <Link href="/privacy" className="w-full flex gap-[15px] items-center px-0 py-px">
+            <Button href="/privacy" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Privacy Policy
-              </span>
-            </Link>
-            <Link href="/disclaimer" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Privacy Policy</span>
+            </Button>
+            <Button href="/disclaimer" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Disclaimer
-              </span>
-            </Link>
-            <Link href="/terms" className="w-full flex gap-[15px] items-center px-0 py-px">
+              <span>Disclaimer</span>
+            </Button>
+            <Button href="/terms" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
               <span className="text-white text-[20px]">▸</span>
-              <span className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
-                Terms & Condition
-              </span>
-            </Link>
+              <span>Terms & Condition</span>
+            </Button>
           </div>
         </div>
 
@@ -101,10 +85,18 @@ export default function Footer() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div className="flex gap-3 items-start text-white text-[20px]">
-            <Link href="#" aria-label="Facebook">f</Link>
-            <Link href="#" aria-label="Twitter">𝕏</Link>
-            <Link href="#" aria-label="Instagram">📷</Link>
-            <Link href="#" aria-label="Pinterest">P</Link>
+            <Button href="#" ariaLabel="Facebook" variant="text" className="text-white hover:text-white/75">
+              f
+            </Button>
+            <Button href="#" ariaLabel="Twitter" variant="text" className="text-white hover:text-white/75">
+              𝕏
+            </Button>
+            <Button href="#" ariaLabel="Instagram" variant="text" className="text-white hover:text-white/75">
+              📷
+            </Button>
+            <Button href="#" ariaLabel="Pinterest" variant="text" className="text-white hover:text-white/75">
+              P
+            </Button>
           </div>
         </div>
       </div>

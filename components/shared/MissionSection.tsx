@@ -1,8 +1,10 @@
 import Image from "next/image";
+import FadeInSection from "./FadeInSection";
 
 export default function MissionSection() {
   return (
-    <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
+    <FadeInSection>
+      <section className="bg-white w-full flex gap-[60px] items-start overflow-hidden pb-[100px] pt-[50px] px-[100px]">
       {/* Left Side - Content */}
       <div className="flex-1 flex flex-col items-start justify-center min-h-0 min-w-0 overflow-hidden pb-[15px] pt-[2px]">
         <div className="flex flex-col gap-5 items-start">
@@ -38,5 +40,6 @@ export default function MissionSection() {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 }
