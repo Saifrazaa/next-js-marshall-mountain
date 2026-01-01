@@ -57,7 +57,7 @@ export default function FamilySection() {
           {/* Row 1 */}
           <div className="w-full flex items-center">
             <div className="flex-1 border border-black/10 flex gap-4 items-start justify-center p-4 rounded-md">
-              <div className="w-[100px] h-[100px] flex items-start overflow-hidden">
+              <div className="w-25 h-25 flex items-start overflow-hidden">
                 <div className="flex-1 h-full relative">
                   <Image 
                     src="/assets/images/family-adventures.jpg"
@@ -81,7 +81,7 @@ export default function FamilySection() {
           {/* Row 2 */}
           <div className="w-full flex items-center">
             <div className="flex-1 border border-black/10 flex gap-4 items-start justify-center p-4 rounded-md">
-              <div className="w-[100px] h-[100px] flex items-start overflow-hidden">
+              <div className="w-25 h-25 flex items-start overflow-hidden">
                 <div className="flex-1 h-full relative">
                   <Image 
                     src="/assets/images/kids-camps.jpg"
@@ -105,7 +105,7 @@ export default function FamilySection() {
           {/* Row 3 */}
           <div className="w-full flex items-center">
             <div className="flex-1 border border-black/10 flex gap-4 items-start justify-center p-4 rounded-md">
-              <div className="w-[100px] h-[100px] flex items-start overflow-hidden">
+              <div className="w-25 h-25 flex items-start overflow-hidden">
                 <div className="flex-1 h-full relative">
                   <Image 
                     src="/assets/images/vibrant-events.jpg"

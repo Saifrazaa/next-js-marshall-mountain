@@ -5,18 +5,18 @@ import Button from "../ui/Button";
 export default function WeddingSection() {
   return (
     <FadeInSection>
-      <section className="bg-[#f9f9f9] w-full flex flex-col gap-[45px] items-center overflow-hidden p-[100px]">
+      <section className="bg-[#f9f9f9] w-full flex flex-col gap-[45px] items-center overflow-hidden p-25">
       {/* Top - Title */}
       <div className="w-full flex items-center justify-between">
         <div className="w-[1240px] flex flex-col items-center overflow-hidden">
-          <div className="font-oswald font-bold text-[45px] leading-[59px] text-[#333] text-center capitalize w-full whitespace-pre-wrap">
+          <div className="font-oswald font-bold text-[45px] leading-14.75 text-[#333] text-center capitalize w-full whitespace-pre-wrap">
             <p className="mb-0">Epic Weddings for Couples</p>
             <p>Who Want MORE</p>
           </div>
         </div>
       </div>
 
-      <p className="font-archivo font-normal text-[17px] leading-[26px] text-[#868686] text-center min-w-full whitespace-pre-wrap">
+      <p className="font-archivo font-normal text-[17px] leading-6.5 text-[#868686] text-center min-w-full whitespace-pre-wrap">
         If you want a quiet ballroom, this isn't your spot.
       </p>
 
@@ -40,7 +40,7 @@ export default function WeddingSection() {
               <h3 className="font-oswald font-bold text-[25px] leading-[35px] text-white w-full">
                 Ceremony on the Mountain Lawn
               </h3>
-              <p className="font-archivo font-normal text-[17px] leading-[26px] text-white/75 w-full">
+              <p className="font-archivo font-normal text-[17px] leading-6.5 text-white/75 w-full">
                 Big sky. Rolling hills. Elevated vibes.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function WeddingSection() {
               <h3 className="font-oswald font-bold text-[25px] leading-[35px] text-[#333] w-full">
                 Receptions in The Marshall Barn
               </h3>
-              <p className="font-archivo font-normal text-[17px] leading-[26px] text-[#6e6e6e] w-full">
+              <p className="font-archivo font-normal text-[17px] leading-6.5 text-[#6e6e6e] w-full">
                 Warm wood, glowing lights, and brand-new patio for cocktail hours and rehearsal dinners.
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function WeddingSection() {
               <h3 className="font-oswald font-bold text-[25px] leading-[35px] text-[#333] w-full whitespace-pre-wrap">
                 Total Takeover Experience
               </h3>
-              <div className="font-archivo font-normal text-[17px] leading-[26px] text-[#6e6e6e] w-full whitespace-pre-wrap">
+              <div className="font-archivo font-normal text-[17px] leading-6.5 text-[#6e6e6e] w-full whitespace-pre-wrap">
                 <p className="mb-3">Your wedding party can:</p>
                 <p className="mb-3">• stay on-site (23-person farmhouse),</p>
                 <p className="mb-3">• explore trails,</p>

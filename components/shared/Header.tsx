@@ -41,7 +41,7 @@ export default function Header() {
           Real Moments
         </Button>
       </nav>
-      <div className="flex items-center rounded-[50px]">
+      <div className="flex items-center rounded-12.5">
         <Button href="/contact" variant="primary" className="px-9 py-3">
           Contact us
         </Button>

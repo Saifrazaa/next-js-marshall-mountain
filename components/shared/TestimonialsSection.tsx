@@ -65,21 +65,21 @@ export default function TestimonialsSection() {
 
   return (
     <FadeInSection>
-      <section className="bg-white w-full flex flex-col gap-[45px] items-center overflow-hidden pt-0 pl-[100px]">
-        <div className="bg-white w-full flex gap-[60px] items-center overflow-hidden pb-[50px] pr-0 pt-[100px]">
+      <section className="bg-white w-full flex flex-col gap-[45px] items-center overflow-hidden pt-0 pl-25">
+        <div className="bg-white w-full flex gap-[60px] items-center overflow-hidden pb-12.5 pr-0 pt-25">
           {/* Left Side - Heading */}
           <div className="flex flex-row items-center self-stretch">
             <div className="bg-white w-[423px] h-full flex flex-col gap-[25px] items-start justify-center overflow-hidden">
               <p className="font-oswald font-semibold text-sm text-[#dadada] uppercase tracking-[0.84px] leading-6 min-w-full whitespace-pre-wrap">
                 Testimonials carousel
               </p>
-              <h2 className="font-oswald font-bold text-[45px] leading-[59px] text-[#333] capitalize min-w-full whitespace-pre-wrap">
+              <h2 className="font-oswald font-bold text-[45px] leading-14.75 text-[#333] capitalize min-w-full whitespace-pre-wrap">
                 Guests Love Their Time on the Mountain
               </h2>
               <p className="flex gap-2.5 items-center text-[#5e8591] leading-6 font-oswald font-semibold text-sm uppercase tracking-[0.84px]">
                 <span>See Guest Reviews</span>
                 <Image
-                  src="/assets/long-arrow-right.svg"
+                  src="/assets/icons/long-arrow-right.svg"
                   alt="arrow"
                   width={16}
                   height={16}
@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
                         }`}
                       >
                         <p
-                          className={`font-archivo font-medium italic text-[20px] leading-[26px] w-full whitespace-pre-wrap ${
+                          className={`font-archivo font-medium italic text-[20px] leading-6.5 w-full whitespace-pre-wrap ${
                             isActive ? "text-white/75" : "text-[#6e6e6e]"
                           }`}
                         >
@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
 
         {/* Pagination */}
       </section>
-      <div className="mb-[100px]">
+      <div className="mb-25">
         <Pagination
           totalSlides={testimonials.length}
           currentIndex={selectedIndex}

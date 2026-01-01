@@ -13,7 +13,7 @@ export default function Pagination({ totalSlides, currentIndex, onSlideChange }:
           onClick={() => onSlideChange(index)}
           className={`transition-all cursor-pointer ${
             currentIndex === index 
-              ? 'bg-[#bebebe] h-3 w-[50px]' 
+              ? 'bg-[#bebebe] h-3 w-12.5' 
               : 'bg-[#dadada] w-3 h-3 hover:bg-[#bebebe]'
           }`}
           aria-label={`Go to slide ${index + 1}`}

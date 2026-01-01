@@ -1,25 +1,44 @@
+import Image from "next/image";
 import Button from "../ui/Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-black w-full flex flex-col gap-[18px] items-start overflow-hidden pb-[30px] pt-[100px] px-[100px]">
+    <footer className="bg-black w-full flex flex-col gap-[18px] items-start overflow-hidden pb-[30px] pt-25 px-25">
       {/* Top Section */}
       <div className="w-full flex gap-[30px] items-start overflow-hidden">
         {/* First Column - Contact Info */}
         <div className="w-[342px] flex flex-col gap-[25px] items-start overflow-hidden">
-          <div className="font-archivo font-normal text-[17px] leading-[26px] text-white/75 w-full">
-            <p>This is from the house looking down We are in the foothills between the Adirondacks and the Catskills The mountains need to be more reflective of green covered rolling hills Not Rocky Mountains</p>
+          <div className="font-archivo font-normal text-[17px] leading-6.5 text-white/75 w-full">
+            <p>
+              This is from the house looking down We are in the foothills
+              between the Adirondacks and the Catskills The mountains need to be
+              more reflective of green covered rolling hills Not Rocky Mountains
+            </p>
           </div>
           <div className="w-full flex flex-col gap-[15px] items-start">
             <div className="w-full flex gap-[15px] items-center px-0 py-px">
-              <span className="text-white text-[20px]">✉</span>
-              <div className="font-archivo font-normal text-[17px] leading-[26px] text-white/75 w-[347px]">
+              <span className="text-white text-[20px]">
+                <Image
+                  src="/assets/icons/envelope.svg"
+                  alt="arrow"
+                  width={20}
+                  height={20}
+                />
+              </span>
+              <div className="font-archivo font-normal text-[17px] leading-6.5 text-white/75 w-[347px]">
                 <p>dan@blueberrybrookfarmresort.com</p>
               </div>
             </div>
             <div className="w-full flex gap-[15px] items-center px-0 py-px">
-              <span className="text-white text-[20px]">📞</span>
-              <div className="flex-1 font-archivo font-normal text-[17px] leading-[26px] text-white/75">
+              <span className="text-white text-[20px]">
+                <Image
+                  src="/assets/icons/phone-square.svg"
+                  alt="arrow"
+                  width={20}
+                  height={20}
+                />
+              </span>
+              <div className="flex-1 font-archivo font-normal text-[17px] leading-6.5 text-white/75">
                 <p>‪+1 (315) 725-7934</p>
               </div>
             </div>
@@ -32,23 +51,43 @@ export default function Footer() {
             Quick Links
           </h3>
           <div className="w-full flex flex-col gap-[15px] items-start">
-            <Button href="/mountain-experience" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/mountain-experience"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Mountain Experience</span>
             </Button>
-            <Button href="/ceremony-locations" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/ceremony-locations"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Ceremony Locations</span>
             </Button>
-            <Button href="/reception" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/reception"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Our Reception</span>
             </Button>
-            <Button href="/pricing" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/pricing"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Our Pricing</span>
             </Button>
-            <Button href="/real-moments" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/real-moments"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Real Moments</span>
             </Button>
@@ -61,15 +100,27 @@ export default function Footer() {
             Usefull Links
           </h3>
           <div className="w-full flex flex-col gap-[15px] items-start">
-            <Button href="/privacy" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/privacy"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Privacy Policy</span>
             </Button>
-            <Button href="/disclaimer" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/disclaimer"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Disclaimer</span>
             </Button>
-            <Button href="/terms" variant="text" className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-[26px]">
+            <Button
+              href="/terms"
+              variant="text"
+              className="w-full flex gap-[15px] items-center px-0 py-px justify-start text-white/75 font-archivo text-[17px] leading-6.5"
+            >
               <span className="text-white text-[20px]">▸</span>
               <span>Terms & Condition</span>
             </Button>
@@ -81,21 +132,61 @@ export default function Footer() {
           <h3 className="font-oswald font-bold text-[25px] leading-[35px] text-white">
             Follow Us
           </h3>
-          <p className="font-archivo font-normal text-[17px] leading-[26px] text-white/75">
+          <p className="font-archivo font-normal text-[17px] leading-6.5 text-white/75">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <div className="flex gap-3 items-start text-white text-[20px]">
-            <Button href="#" ariaLabel="Facebook" variant="text" className="text-white hover:text-white/75">
-              f
+          <div className="flex gap-4 items-center text-white text-[20px]">
+            <Button
+              href="#"
+              ariaLabel="Facebook"
+              variant="text"
+              className="text-white hover:text-white/75"
+            >
+              <Image
+                src="/assets/icons/facebook.svg"
+                alt="arrow"
+                width={20}
+                height={20}
+              />
             </Button>
-            <Button href="#" ariaLabel="Twitter" variant="text" className="text-white hover:text-white/75">
-              𝕏
+            <Button
+              href="#"
+              ariaLabel="Twitter"
+              variant="text"
+              className="text-white hover:text-white/75"
+            >
+              <Image
+                src="/assets/icons/twitter.svg"
+                alt="arrow"
+                width={20}
+                height={20}
+              />
             </Button>
-            <Button href="#" ariaLabel="Instagram" variant="text" className="text-white hover:text-white/75">
-              📷
+            <Button
+              href="#"
+              ariaLabel="Instagram"
+              variant="text"
+              className="text-white hover:text-white/75"
+            >
+              <Image
+                src="/assets/icons/instagram.svg"
+                alt="arrow"
+                width={20}
+                height={20}
+              />
             </Button>
-            <Button href="#" ariaLabel="Pinterest" variant="text" className="text-white hover:text-white/75">
-              P
+            <Button
+              href="#"
+              ariaLabel="Pinterest"
+              variant="text"
+              className="text-white hover:text-white/75"
+            >
+              <Image
+                src="/assets/icons/pinterest.svg"
+                alt="arrow"
+                width={20}
+                height={20}
+              />
             </Button>
           </div>
         </div>

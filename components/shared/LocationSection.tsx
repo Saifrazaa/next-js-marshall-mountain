@@ -6,8 +6,8 @@ export default function LocationSection() {
     <>
       {/* Location Title */}
       <FadeInSection>
-        <div className="w-full h-[59px] flex flex-col gap-5 items-start overflow-hidden">
-        <h2 className="font-oswald font-bold text-[45px] leading-[59px] text-black text-center capitalize w-full whitespace-pre-wrap">
+        <div className="w-full h-14.75 flex flex-col gap-5 items-start overflow-hidden">
+        <h2 className="font-oswald font-bold text-[45px] leading-14.75 text-black text-center capitalize w-full whitespace-pre-wrap">
           LOCATION MAP
         </h2>
       </div>

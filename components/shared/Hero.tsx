@@ -75,7 +75,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative w-full flex flex-col gap-[100px] items-start pb-[100px] pt-[200px] overflow-hidden">
+      <section className="relative w-full flex flex-col gap-25 items-start pb-25 pt-[200px] overflow-hidden">
         {/* Hero Slider with Background Images */}
         <div className="absolute inset-0 z-0">
           <div className="overflow-hidden h-full" ref={emblaRef2}>
@@ -122,7 +122,7 @@ export default function Hero() {
                             {slide.title.split("\n")[1]}
                           </h1>
                         </div>
-                        <p className="font-archivo font-normal text-[17px] leading-[26px] my-6 text-white/75 text-center whitespace-pre-wrap">
+                        <p className="font-archivo font-normal text-[17px] leading-6.5 my-6 text-white/75 text-center whitespace-pre-wrap">
                           {slide.description}
                         </p>
                         <Button
