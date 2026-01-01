@@ -102,10 +102,6 @@ export default function Header() {
                 variant="link"
                 onClick={closeMenu}
                 className={`text-left py-4 px-4 rounded-lg transition-all duration-200 hover:bg-white/10 text-lg ${item.isActive ? 'text-white font-semibold bg-white/5' : 'text-gray-300'}`}
-                style={{
-                  animationDelay: `${index * 50}ms`,
-                  animation: isMenuOpen ? 'slideIn 0.3s ease-out forwards' : 'none'
-                }}
               >
                 {item.label}
               </Button>
